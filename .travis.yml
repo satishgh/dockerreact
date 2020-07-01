@@ -10,7 +10,7 @@ script:
     - docker run -e CI=true satishgh/dockerreact npm run test
 
 deploy: 
-    Provider: elasticbeanstalk
+    provider: elasticbeanstalk
     region: "us-east-2"
     app: "dockerreact"
     env: "Dockerreact-env"
